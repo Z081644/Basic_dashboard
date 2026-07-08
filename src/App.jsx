@@ -3,7 +3,7 @@ import "./Css/App.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
-import ProtectedRoute from "./components/protectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute";
 import { toast, ToastContainer } from "react-toastify";
 import Home from "./Pages/Home";
 import { Tabs } from "@ninna-ui/navigation";
