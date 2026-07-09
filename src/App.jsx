@@ -36,6 +36,30 @@ function App() {
             </ProtectedRoute>
           }
         ></Route>
+        <Route
+          path="/about"
+          element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <Home />
+            </ProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path="/services"
+          element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <Home />
+            </ProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path="/contact"
+          element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <Home />
+            </ProtectedRoute>
+          }
+        ></Route>
       </Routes>
     </>
   );

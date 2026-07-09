@@ -1,37 +1,15 @@
 import { Heading, Text, Badge } from "@ninna-ui/primitives";
-import { ArrowUpIcon, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import Menu from "@/components/Menu";
 
 const Home = () => {
   return (
     <>
       <div className="p-8 bg-black">
-        <DropdownMenu className="text-black">
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="icon" className="rounded-full"><ArrowUpIcon/></Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuGroup>
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Billing</DropdownMenuItem>
-            </DropdownMenuGroup>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem>Team</DropdownMenuItem>
-              <DropdownMenuItem>Subscription</DropdownMenuItem>
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <div className="text-white">
+          <Menu/>
+          </div>
         <Heading as="h1" size="3xl">
           Hello Ninna UI
         </Heading>
